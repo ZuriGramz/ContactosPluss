@@ -4,21 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ContactosPlus
+namespace ContactosPlus.claseArchivos
 {
     internal class Contacto
     {
-        public int id { get; }
-        public string nombre { get; }
-        public string apellidos { get; }
-        public int telefono { get; }
+        public int id { get; set; }
+        public string nombre { get; set; }
+        public string apellidos { get; set; }
+        public int telefono { get; set; }
         public int extension { get; set; }
         public string puesto { get; set; }  
         public string empresa { get; set; }
+        public string correo { get; set; }
         public string observaciones { get; set; }
         public bool estatus { get; set; }
 
-        public Contacto(int id, string nombre, string apellidos, int telefono, int extension, string puesto, string empresa, string observaciones)
+        public Contacto(int id, string nombre, string apellidos, int telefono, int extension, string puesto, string empresa, string correo, string observaciones)
         {
             this.id = id;
             this.nombre = nombre;

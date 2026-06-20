@@ -1,9 +1,12 @@
-﻿
+﻿using ContactosPlus.claseArchivos;
 
 namespace ContactosPlus
 {
     public partial class FrmDirectorioTelefonico : Form
     {
+
+        private clArchivos archivo; 
+
         public FrmDirectorioTelefonico()
         {
             InitializeComponent();
@@ -24,6 +27,8 @@ namespace ContactosPlus
             validarTextbox(txtCargo, "Verifica tu numero de Cargo");
             validarTextbox(txtEmpresa, "Verifica tu Empresa");
             validarTextbox(txtCorreo, "Verifica tu Correo");*/
+
+            
 
 
             foreach (TextBox componente in componentes)
@@ -122,6 +127,11 @@ namespace ContactosPlus
             componentes.Add(txtCargo);
             componentes.Add(txtEmpresa);
             componentes.Add(txtCorreo);
+
+
+
+          this.archivo  = new clArchivos("Directorio.txt");
+
 
         }
 

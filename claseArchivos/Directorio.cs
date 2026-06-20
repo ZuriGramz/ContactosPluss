@@ -4,15 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ContactosPlus
+namespace ContactosPlus.claseArchivos
 {
     internal class Directorio
     {
         private List<Contacto> midirectorio=new List<Contacto>();
 
-        public void add(int id, string nombre, string apellidos, int telefono, int extension, string puesto, string empresa, string observaciones)
+        public void add(int id, string nombre, string apellidos, int telefono, int extension, string puesto, string empresa,string correo, string observaciones)
         {
-            midirectorio.Add(new Contacto(id, nombre, apellidos, telefono, extension, puesto, empresa, observaciones) );
+            midirectorio.Add(new Contacto(id, nombre, apellidos, telefono, extension, puesto, empresa, correo, observaciones) );
         }
 
         public void show()
